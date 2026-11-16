@@ -1,6 +1,6 @@
 # Python implementation of SSVC (Stakeholder-Specific Vulnerability Categorization)
 
-[![PyPI](https://img.shields.io/pypi/v/ssvc?label=pypi%20package)](https://pypi.org/project/ssvc/) [![coverage badge](./coverage.svg)](../../actions/workflows/action.yml) [![Python](https://img.shields.io/pypi/pyversions/ssvc)](https://pypi.org/project/ssvc/) [![License](https://img.shields.io/github/license/Vulnetix/python-ssvc)](https://github.com/Vulnetix/python-ssvc/blob/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/ssvc?label=pypi%20package)](https://pypi.org/project/ssvc/) [![coverage badge](./coverage.svg)](../../actions/workflows/action.yml) [![Python](https://img.shields.io/pypi/pyversions/ssvc)](https://pypi.org/project/ssvc/) [![License](https://img.shields.io/github/license/Vulnetix/python-ssvc)](https://github.com/Vulnetix/python-ssvc/blob/main/LICENSE) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/python-ssvc)
 
 A comprehensive Python implementation of the Stakeholder-Specific Vulnerability Categorization (SSVC) framework with a plugin-based architecture supporting multiple decision methodologies, vector string representation, and JSON schema validation.
 
