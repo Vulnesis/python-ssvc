@@ -2,7 +2,7 @@
 name = "ssvc"
 version = "1.2.3"
 description = "A Python implementation of the Stakeholder-Specific Vulnerability Categorization framework."
-authors = [{name = "Christopher Langton", email = "chris@vulnetix.com"}]
+authors = [{name = "Christopher Langton", email = "chris@vulnes.is"}]
 readme = "PYPI.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -24,7 +24,7 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://www.vulnetix.com"
+Homepage = "https://www.vulnes.is"
 Repository = "https://github.com/vulnetix/python-ssvc.git"
 
 [tool.coverage.run]
