@@ -2,7 +2,7 @@
 name = "ssvc"
 version = "1.2.3"
 description = "A Python implementation of the Stakeholder-Specific Vulnerability Categorization framework."
-authors = [{name = "Christopher Langton", email = "chris@vulnes.is"}]
+authors = [{name = "Christopher Langton", email = "chris@vulnetix.com"}]
 readme = "PYPI.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -24,8 +24,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://www.vulnes.is"
-Repository = "https://github.com/vulnesis/python-ssvc.git"
+Homepage = "https://www.vulnetix.com"
+Repository = "https://github.com/vulnetix/python-ssvc.git"
 
 [tool.coverage.run]
 # Measure the library, not the test files. Without this, coverage defaults to
