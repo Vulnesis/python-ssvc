@@ -29,7 +29,7 @@ conda install -c conda-forge ssvc
 
 ```bash
 # Clone and install from GitHub
-git clone https://github.com/Vulnetix/python-ssvc.git
+git clone https://github.com/Vulnesis/python-ssvc.git
 cd python-ssvc
 uv sync
 uv run python -m pip install -e .
@@ -219,8 +219,8 @@ Create custom methodologies using YAML definitions:
 
 SSVC is available in multiple programming languages:
 
-- **Python**: This library - [python-ssvc](https://github.com/Vulnetix/python-ssvc)
-- **TypeScript**: [typescript-ssvc](https://github.com/Vulnetix/typescript-ssvc)
+- **Python**: This library - [python-ssvc](https://github.com/Vulnesis/python-ssvc)
+- **TypeScript**: [typescript-ssvc](https://github.com/Vulnesis/typescript-ssvc)
 - **Go**: 🚧 In Development
 
 ## Contributing
@@ -229,7 +229,7 @@ We welcome contributions! To add new methodologies or improve the library:
 
 ### Adding New Methodologies
 
-1. **Fork the repository** on [GitHub](https://github.com/Vulnetix/python-ssvc)
+1. **Fork the repository** on [GitHub](https://github.com/Vulnesis/python-ssvc)
 2. **Create YAML definition** following the schema structure
 3. **Generate plugin** using the built-in generator
 4. **Add comprehensive tests** with 100% coverage
@@ -274,7 +274,7 @@ defaultAction: ACTION_ONE
 ### Development Setup
 
 ```bash
-git clone https://github.com/Vulnetix/python-ssvc.git
+git clone https://github.com/Vulnesis/python-ssvc.git
 cd python-ssvc
 uv sync
 uv run python -c "import ssvc; print('SSVC ready for development!')"
@@ -295,8 +295,8 @@ uv run python scripts/generate_plugins.py
 
 ## Links
 
-- **Documentation**: [GitHub Repository](https://github.com/Vulnetix/python-ssvc)
-- **Issues & Bug Reports**: [GitHub Issues](https://github.com/Vulnetix/python-ssvc/issues)
+- **Documentation**: [GitHub Repository](https://github.com/Vulnesis/python-ssvc)
+- **Issues & Bug Reports**: [GitHub Issues](https://github.com/Vulnesis/python-ssvc/issues)
 - **Official SSVC**: [certcc.github.io/SSVC](https://certcc.github.io/SSVC/)
 
 ## License

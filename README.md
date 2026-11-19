@@ -1,6 +1,6 @@
 # Python implementation of SSVC (Stakeholder-Specific Vulnerability Categorization)
 
-[![PyPI](https://img.shields.io/pypi/v/ssvc?label=pypi%20package)](https://pypi.org/project/ssvc/) [![coverage badge](./coverage.svg)](../../actions/workflows/action.yml) [![Python](https://img.shields.io/pypi/pyversions/ssvc)](https://pypi.org/project/ssvc/) [![License](https://img.shields.io/github/license/Vulnesis/python-ssvc)](https://github.com/Vulnetix/python-ssvc/blob/main/LICENSE) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/python-ssvc)
+[![PyPI](https://img.shields.io/pypi/v/ssvc?label=pypi%20package)](https://pypi.org/project/ssvc/) [![coverage badge](./coverage.svg)](../../actions/workflows/action.yml) [![Python](https://img.shields.io/pypi/pyversions/ssvc)](https://pypi.org/project/ssvc/) [![License](https://img.shields.io/github/license/Vulnesis/python-ssvc)](https://github.com/Vulnesis/python-ssvc/blob/main/LICENSE) [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/python-ssvc)
 
 A comprehensive Python implementation of the Stakeholder-Specific Vulnerability Categorization (SSVC) framework with a plugin-based architecture supporting multiple decision methodologies, vector string representation, and JSON schema validation.
 
@@ -8,8 +8,8 @@ A comprehensive Python implementation of the Stakeholder-Specific Vulnerability 
 
 SSVC is available in multiple programming languages:
 
-- **Python**: This library - [python-ssvc](https://github.com/Vulnetix/python-ssvc) [![PyPI](https://img.shields.io/pypi/v/ssvc)](https://pypi.org/project/ssvc/)
-- **TypeScript**: [typescript-ssvc](https://github.com/Vulnetix/typescript-ssvc) [![npm](https://img.shields.io/npm/v/ssvc)](https://www.npmjs.com/package/ssvc)
+- **Python**: This library - [python-ssvc](https://github.com/Vulnesis/python-ssvc) [![PyPI](https://img.shields.io/pypi/v/ssvc)](https://pypi.org/project/ssvc/)
+- **TypeScript**: [typescript-ssvc](https://github.com/Vulnesis/typescript-ssvc) [![npm](https://img.shields.io/npm/v/ssvc)](https://www.npmjs.com/package/ssvc)
 - **Go**: 🚧 In Development
 
 ## Installation
@@ -37,7 +37,7 @@ conda install -c conda-forge ssvc
 
 ```bash
 # Clone and install from GitHub source
-git clone https://github.com/Vulnetix/python-ssvc.git
+git clone https://github.com/Vulnesis/python-ssvc.git
 cd python-ssvc
 uv sync
 uv run python -m pip install -e .
@@ -737,7 +737,7 @@ To contribute a methodology to the official library:
 
 #### Submission Process
 
-1. **Fork Repository**: [github.com/Vulnetix/python-ssvc](https://github.com/Vulnetix/python-ssvc)
+1. **Fork Repository**: [github.com/Vulnetix/python-ssvc](https://github.com/Vulnesis/python-ssvc)
 2. **Create YAML**: Define methodology in `src/ssvc/methodologies/`
 3. **Generate Plugin**: Run generator to create Python code
 4. **Add Tests**: Comprehensive test coverage in `tests/`
@@ -766,7 +766,7 @@ Approved methodologies become part of the official library distribution.
 
 ```bash
 # Clone repository
-git clone https://github.com/Vulnetix/python-ssvc.git
+git clone https://github.com/Vulnesis/python-ssvc.git
 cd python-ssvc
 
 # Setup development environment
@@ -876,14 +876,14 @@ The test suite ensures reliability across three areas:
 
 ### Project Resources
 
-- **GitHub Repository**: [github.com/Vulnetix/python-ssvc](https://github.com/Vulnetix/python-ssvc)
+- **GitHub Repository**: [github.com/Vulnetix/python-ssvc](https://github.com/Vulnesis/python-ssvc)
 - **PyPI Package**: [pypi.org/project/ssvc](https://pypi.org/project/ssvc/)
-- **Issue Tracker**: [github.com/Vulnetix/python-ssvc/issues](https://github.com/Vulnetix/python-ssvc/issues)
-- **Discussions**: [github.com/Vulnetix/python-ssvc/discussions](https://github.com/Vulnetix/python-ssvc/discussions)
+- **Issue Tracker**: [github.com/Vulnetix/python-ssvc/issues](https://github.com/Vulnesis/python-ssvc/issues)
+- **Discussions**: [github.com/Vulnetix/python-ssvc/discussions](https://github.com/Vulnesis/python-ssvc/discussions)
 
 ### Related Projects
 
-- **TypeScript Implementation**: [typescript-ssvc](https://github.com/Vulnetix/typescript-ssvc)
+- **TypeScript Implementation**: [typescript-ssvc](https://github.com/Vulnesis/typescript-ssvc)
 - **Official SSVC Tools**: [github.com/CERTCC/SSVC](https://github.com/CERTCC/SSVC)
 
 ## License
@@ -892,12 +892,12 @@ Licensed under the Apache License 2.0. See [LICENSE](LICENSE) for the full licen
 
 ## Contributing
 
-We welcome contributions! Please see our [Contributing Guidelines](https://github.com/Vulnetix/python-ssvc/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/Vulnetix/python-ssvc/blob/main/CODE_OF_CONDUCT.md).
+We welcome contributions! Please see our [Contributing Guidelines](https://github.com/Vulnesis/python-ssvc/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/Vulnesis/python-ssvc/blob/main/CODE_OF_CONDUCT.md).
 
 ### Ways to Contribute
 
-1. **Report Bugs**: Use the [issue tracker](https://github.com/Vulnetix/python-ssvc/issues)
-2. **Feature Requests**: Discuss new features in [discussions](https://github.com/Vulnetix/python-ssvc/discussions)
+1. **Report Bugs**: Use the [issue tracker](https://github.com/Vulnesis/python-ssvc/issues)
+2. **Feature Requests**: Discuss new features in [discussions](https://github.com/Vulnesis/python-ssvc/discussions)
 3. **Add Methodologies**: Contribute new SSVC methodologies via pull request
 4. **Improve Documentation**: Help improve examples and explanations
 5. **Code Quality**: Help with testing, performance, or code organization
