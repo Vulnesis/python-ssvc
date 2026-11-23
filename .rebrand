@@ -1,5 +1,0 @@
-# scripts/rebrand.py config (Vulnesis/ops).
-# Shared by both brands: only documents are rebranded; code and published
-# identifiers stay exactly as in Vulnetix.
-docs-only
-keep VULNETIX_
