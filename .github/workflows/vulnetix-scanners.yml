@@ -18,7 +18,7 @@ permissions:
 jobs:
   bandit:
     name: Bandit (Python SAST)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up uv
@@ -55,7 +55,7 @@ jobs:
 
   bearer:
     name: Bearer (SAST)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run Bearer
@@ -85,7 +85,7 @@ jobs:
 
   cdxgen:
     name: cdxgen (multi-ecosystem SBOM)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up Node.js
@@ -116,7 +116,7 @@ jobs:
 
   checkov:
     name: Checkov (IaC)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up uv
@@ -145,7 +145,7 @@ jobs:
 
   cyclonedx-python:
     name: CycloneDX Python SBOM
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up uv
@@ -193,7 +193,7 @@ jobs:
 
   detect-secrets:
     name: detect-secrets (secrets)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up uv
@@ -306,7 +306,7 @@ jobs:
 
   dockle:
     name: Dockle (container image)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up Go
@@ -351,7 +351,7 @@ jobs:
 
   github-sbom:
     name: GitHub SBOM (SPDX)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Export the dependency graph
@@ -382,7 +382,7 @@ jobs:
 
   gitleaks:
     name: Gitleaks (Secrets)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run Gitleaks
@@ -407,7 +407,7 @@ jobs:
 
   grype:
     name: Grype (SCA)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run Grype
@@ -433,7 +433,7 @@ jobs:
 
   grype-image:
     name: Grype image (OCI)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Build the image
@@ -484,7 +484,7 @@ jobs:
 
   hadolint:
     name: Hadolint (Dockerfile)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run Hadolint
@@ -525,7 +525,7 @@ jobs:
 
   kics:
     name: KICS (IaC)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run KICS
@@ -545,7 +545,7 @@ jobs:
 
   noseyparker:
     name: Nosey Parker (secrets)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run Nosey Parker
@@ -578,7 +578,7 @@ jobs:
 
   opengrep:
     name: OpenGrep (SAST)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run OpenGrep
@@ -611,7 +611,7 @@ jobs:
 
   osv-scanner:
     name: OSV-Scanner (SCA)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run OSV-Scanner
@@ -632,7 +632,7 @@ jobs:
 
   ruff:
     name: Ruff (Python lint)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up uv
@@ -669,7 +669,7 @@ jobs:
 
   scancode:
     name: ScanCode Toolkit (license SBOM)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up uv
@@ -726,7 +726,7 @@ jobs:
 
   semgrep:
     name: Semgrep (SAST)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up uv
@@ -755,7 +755,7 @@ jobs:
 
   syft:
     name: Syft (CycloneDX SBOM)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Generate CycloneDX SBOM
@@ -776,7 +776,7 @@ jobs:
 
   syft-image:
     name: Syft image (CycloneDX SBOM)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Build the image
@@ -824,7 +824,7 @@ jobs:
 
   trivy-config:
     name: Trivy config (IaC/Dockerfile)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Trivy config
@@ -845,7 +845,7 @@ jobs:
 
   trivy-fs:
     name: Trivy (filesystem CDX + SARIF)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Trivy filesystem (CycloneDX)
@@ -876,7 +876,7 @@ jobs:
 
   trivy-image:
     name: Trivy image (OCI)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Build the image
@@ -925,7 +925,7 @@ jobs:
 
   trufflehog:
     name: TruffleHog (secrets)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Run TruffleHog
@@ -1052,7 +1052,7 @@ jobs:
 
   zizmor:
     name: zizmor (GitHub Actions SAST)
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     steps:
       - uses: actions/checkout@v5.1.0
       - name: Set up uv
@@ -1093,7 +1093,7 @@ jobs:
 
   publish:
     name: Publish to Vulnetix
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     needs: [bandit, bearer, cdxgen, checkov, cyclonedx-python, detect-secrets, dockle, github-sbom, gitleaks, grype, grype-image, hadolint, kics, noseyparker, opengrep, osv-scanner, ruff, scancode, semgrep, syft, syft-image, trivy-config, trivy-fs, trivy-image, trufflehog, zizmor]
     if: always()
     permissions:

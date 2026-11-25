@@ -16,7 +16,7 @@ permissions:
 jobs:
   secrets:
     name: Secrets
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     permissions:
       contents: read
       security-events: write
@@ -43,7 +43,7 @@ jobs:
 
   sast-python:
     name: SAST python
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     permissions:
       contents: read
       security-events: write
@@ -84,7 +84,7 @@ jobs:
 
   sca-pip:
     name: SCA pip
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     permissions:
       contents: read
       security-events: write
@@ -110,7 +110,7 @@ jobs:
 
   sca-uv:
     name: SCA uv
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     permissions:
       contents: read
       security-events: write
@@ -127,7 +127,7 @@ jobs:
 
   containers:
     name: Containers
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     permissions:
       contents: read
       security-events: write
@@ -151,7 +151,7 @@ jobs:
 
   license:
     name: License
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     permissions:
       contents: read
       security-events: write
@@ -168,7 +168,7 @@ jobs:
 
   cbom:
     name: CBOM
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7.0.1
@@ -181,7 +181,7 @@ jobs:
 
   aibom:
     name: AIBOM
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7.0.1
@@ -197,7 +197,7 @@ jobs:
 
   analyze:
     name: Analyze
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     permissions:
       contents: read
       issues: read
@@ -216,7 +216,7 @@ jobs:
 
   sbom:
     name: SBOM
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     permissions:
       attestations: write
       contents: write
@@ -235,7 +235,7 @@ jobs:
 
   fix:
     name: fix
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7.0.1
@@ -248,7 +248,7 @@ jobs:
 
   root:
     name: .
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7.0.1
@@ -261,7 +261,7 @@ jobs:
 
   publish:
     name: Publish
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     if: ${{ !cancelled() }}
     needs: [secrets, sast-python, sca-pip, sca-uv, containers, license, cbom, aibom, analyze, sbom, fix, root]
     permissions:
@@ -278,7 +278,7 @@ jobs:
 
   tea:
     name: TEA
-    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnetix-local"]') }}
+    runs-on: ${{ github.event_name == 'pull_request' && fromJSON('["ubuntu-latest"]') || fromJSON('["self-hosted","Linux","X64","vulnesis-cf"]') }}
     if: ${{ !cancelled() }}
     needs: [cbom, aibom, sbom]
     permissions:
