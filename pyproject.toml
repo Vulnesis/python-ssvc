@@ -24,8 +24,8 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://www.vulnetix.com"
-Repository = "https://github.com/vulnetix/python-ssvc.git"
+Homepage = "https://www.vulnes.is"
+Repository = "https://github.com/Vulnesis/python-ssvc.git"
 
 [tool.coverage.run]
 # Measure the library, not the test files. Without this, coverage defaults to
